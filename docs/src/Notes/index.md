@@ -3,8 +3,8 @@ layout: page
 sidebar: false
 
 hero:
-  title: "Document"
-  subTitle: "📚 欢迎来到本项目的使用说明书"
+  title: "Studing"
+  subTitle: "📚 这里是我的一些碎碎念"
 
 types:
   - name: "使用指南"

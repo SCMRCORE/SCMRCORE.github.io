@@ -13,7 +13,7 @@
           >.
         </div>
         <p class="mt-2 text-base sm:text-lg">SWPU / Live Wallpaper / Back-End Developer</p>
-        <p class="mt-1 text-black/50">“Thanks to zbwer's open-source code”</p>
+        <p class="mt-1 text-black/50">“Thanks to zbwer's open-source template”</p>
         <div class="mt-4 flex gap-4">
           <div
               @click="router.go('/Notes/')"

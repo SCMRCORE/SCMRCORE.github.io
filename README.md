@@ -1,6 +1,6 @@
 <h1 align="center">🌀 easy-vitepress-blog 🏖️</h1>
 
-基于 VitePress 快速搭建个人博客，自动化路由处理并预置了更加丰富的页面。
+博客模板来源于ZbWer，基于 VitePress 快速搭建个人博客，自动化路由处理并预置了更加丰富的页面。
 
 ## ✨ 特性
 
