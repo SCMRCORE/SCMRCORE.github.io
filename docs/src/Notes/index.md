@@ -13,8 +13,12 @@ types:
     icon: "✨"
   - name: "面经分享"
     desc: "interview experiences"
-    link: "/Notes/Interviews/"
+    link: "/Notes/Interviews/review"
     icon: "🏃"
+  - name: "代码随想录"
+    desc: "only record"
+    link: "/Notes/CodeMemoirs/docker-swarm"
+    icon: "📚" 
 # flow: true
 ---
 

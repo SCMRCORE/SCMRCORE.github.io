@@ -10,7 +10,7 @@
           ></div>
           <img
             class="block w-48 h-48 mx-auto rounded-full"
-            src="./img/avatar.jpg"
+            src="./img/Blog_logo.png"
             alt="avatar"
           />
         </div>
@@ -19,26 +19,28 @@
           style="top: 32%"
           class="tag-bounce hidden sm:block sm:left-[69%] md:left-[66%] lg:left-[63%] xl:left-[60%] absolute px-3 py-0.5 text-sm font-bold rounded-full shadow-[0px_0px_1px_1px#eee]"
         >
-          🎵 二进制吟游诗人
+<!--          🎵 白噪音循环一整天-->
+          🚀Coding不能停
         </p>
         <p
           style="top: 50%"
           class="tag-bounce hidden sm:block sm:left-[69%] md:left-[66%] lg:left-[63%] xl:left-[60%] absolute px-3 py-0.5 text-sm font-bold rounded-full shadow-[0px_0px_1px_1px#eee]"
         >
-          绿茵场最佳气氛组⚽
+          单臂弯举突破10KG ing🎯
         </p>
         <!-- Left-tags -->
         <p
           style="top: 32%"
           class="tag-bounce hidden sm:block sm:left-[8%] md:left-[13%] lg:left-[21%] xl:left-[27%] absolute px-3 py-0.5 text-sm font-bold rounded-full shadow-[0px_0px_1px_1px#eee]"
         >
-          🌙 倒头就睡懒羊羊
+          🌙 一点之前一定睡
         </p>
         <p
           style="top: 50%"
           class="tag-bounce hidden sm:block sm:left-[8%] md:left-[13%] lg:left-[21%] xl:left-[27%] absolute px-3 py-0.5 text-sm font-bold rounded-full shadow-[0px_0px_1px_1px#eee]"
         >
-          宇宙无敌暴龙战士🚀
+<!--          Coding不能停🚀-->
+           白噪音循环一整天🎵
         </p>
       </div>
       <!-- 概述与箴言 -->
@@ -50,30 +52,30 @@
           >
             <p class="text-lg text-slate-50">你好，很高兴认识你 👋</p>
             <h1 class="text-2xl font-bold xl:text-3xl lg:break-normal lg:break-words">
-              A Chinese undergraduate From UESTC
+              A Chinese undergraduate From SWPU
             </h1>
-            <p class="text-slate-100">前端开发 / 产品设计 / 足球 🔥</p>
+            <p class="text-slate-100">后端开发 / Live Wallpapers / 健身 🔥</p>
           </div>
           <!-- 箴言 -->
           <div
             class="bg-stripe dark:border-slate-900 dark:bg-slate-800 md:w-[39%] w-full rounded-xl border p-4 bg-slate-50"
           >
-            <p class="text-[12px]">箴言</p>
+            <p class="text-[12px]">💬 Desc</p>
             <div>
               <h1 class="text-3xl leading-9">
                 <span class="hidden font-bold text-teal-400 md:inline-block"
-                  >Miracle&nbsp;
+                  >Enjoying&nbsp;
                 </span>
-                <span class="hidden lg:inline-block"> Is Everywhere</span>
+                <span class="hidden lg:inline-block"> Coding🚀</span>
               </h1>
               <h1 class="font-serif text-3xl tracking-widest md:text-2xl lg:text-3xl">
-                纵有<span class="font-bold text-sky-500">狂风</span>拔地起
+                Record what I <span class="font-bold text-sky-500">see and think</span>
               </h1>
               <h1 class="text-2xl leading-9 md:text-3xl">
                 <span class="inline-block font-bold text-teal-400 md:hidden"
-                  >Miracle&nbsp;
+                  >Enjoying&nbsp;
                 </span>
-                <span class="inline-block lg:hidden">Is Everywhere</span>
+                <span class="inline-block lg:hidden">Coding🚀</span>
               </h1>
             </div>
           </div>
@@ -85,11 +87,11 @@
         <div
           class="bg-stripe w-full md:w-[35%] bg-slate-50 border dark:bg-slate-800 dark:border-slate-900 p-4 rounded-xl"
         >
-          <p class="text-[12px]">简介</p>
+          <p class="text-[12px]">👋Introduction</p>
           <div class="mt-2">
-            <h1 class="text-xl">主修计算机科学与技术</h1>
-            <h1 class="text-xl">辅修<span class="text-pink-500">猫娘行为学</span></h1>
-            <h1 class="text-xl lg:text-xl md:text-base">梦想是做程序员烧烤领袖</h1>
+            <h1 class="text-xl">还在找一份后端实习ing</h1>
+            <h1 class="text-xl">偶尔做做<span class="text-pink-500">Live Wallpapers</span></h1>
+            <h1 class="text-xl lg:text-xl md:text-base">想要多做做Open Source</h1>
             <p></p>
           </div>
         </div>
@@ -104,13 +106,13 @@
               <div
                 class="flex justify-center flex-shrink-0 w-20 h-20 p-4 rounded-lg bg-emerald-200"
               >
-                <img src="./img/vue.svg" alt="vue.js" />
+                <img src="https://user-images.githubusercontent.com/25181517/117201470-f6d56780-adec-11eb-8f7c-e70e376cfd07.png" alt="Spring" />
               </div>
               <div class="flex-shrink-0 w-20 h-20 p-4 bg-red-200 rounded-lg">
-                <img src="./img/html.svg" alt="" />
+                <img  src="https://user-images.githubusercontent.com/25181517/182884894-d3fa6ee0-f2b4-4960-9961-64740f533f2a.png" alt="redis" />
               </div>
               <div class="flex-shrink-0 w-20 h-20 p-4 rounded-lg bg-sky-200">
-                <img src="./img/css.svg" alt="" />
+                <img src="https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png" alt="Docker" />
               </div>
               <div
                 class="flex justify-center flex-shrink-0 w-20 h-20 p-4 rounded-lg bg-slate-200"
@@ -120,7 +122,7 @@
               <div
                 class="flex justify-center w-20 h-20 p-4 flex-shrink-0 rounded-lg bg-[#f7cb4f]"
               >
-                <img class="rounded-lg" src="./img/js.webp" alt="" />
+                <img class="rounded-lg"  src="https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png" alt="MySQL" />
               </div>
               <div
                 class="flex justify-center flex-shrink-0 w-20 h-20 p-4 bg-red-400 rounded-lg"
@@ -130,28 +132,28 @@
               <div
                 class="flex justify-center flex-shrink-0 w-20 h-20 p-4 rounded-lg bg-slate-200"
               >
-                <img class="rounded-lg" src="./img/python.svg" alt="" />
+                <img class="rounded-lg"  src="https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png" alt="Java" />
               </div>
               <div
                 class="flex justify-center flex-shrink-0 w-20 h-20 p-4 rounded-lg bg-rose-200"
               >
-                <img class="rounded-lg" src="./img/npm.svg" alt="" />
+                <img class="rounded-lg"  src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png" alt="Postman" />
               </div>
               <div
                 class="flex justify-center flex-shrink-0 w-20 h-20 p-4 bg-indigo-200 rounded-lg"
               >
-                <img class="rounded-lg" src="./img/eslint.svg" alt="" />
+                <img class="rounded-lg" src="https://user-images.githubusercontent.com/25181517/192108890-200809d1-439c-4e23-90d3-b090cf9a4eea.png" alt="IntelliJ" />
               </div>
               <div
                 class="flex justify-center flex-shrink-0 w-20 h-20 p-4 rounded-lg bg-emerald-200"
               >
-                <img src="./img/vue.svg" alt="vue.js" />
+                <img src="https://user-images.githubusercontent.com/25181517/183345125-9a7cd2e6-6ad6-436f-8490-44c903bef84c.png" alt="Nginx"  />
               </div>
               <div class="flex-shrink-0 w-20 h-20 p-4 bg-red-200 rounded-lg">
-                <img src="./img/html.svg" alt="" />
+                <img  src="https://user-images.githubusercontent.com/25181517/182884894-d3fa6ee0-f2b4-4960-9961-64740f533f2a.png" alt="redis" />
               </div>
               <div class="flex-shrink-0 w-20 h-20 p-4 rounded-lg bg-sky-200">
-                <img src="./img/css.svg" alt="" />
+                <img src="https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png" alt="Docker" />
               </div>
               <div
                 class="flex justify-center flex-shrink-0 w-20 h-20 p-4 rounded-lg bg-slate-200"
@@ -161,7 +163,7 @@
               <div
                 class="flex justify-center w-20 h-20 p-4 flex-shrink-0 rounded-lg bg-[#f7cb4f]"
               >
-                <img class="rounded-lg" src="./img/js.webp" alt="" />
+                <img class="rounded-lg"  src="https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png" alt="MySQL" />
               </div>
               <div
                 class="flex justify-center flex-shrink-0 w-20 h-20 p-4 bg-red-400 rounded-lg"
@@ -176,12 +178,12 @@
               <div
                 class="flex justify-center flex-shrink-0 w-20 h-20 p-4 rounded-lg bg-rose-200"
               >
-                <img class="rounded-lg" src="./img/npm.svg" alt="" />
+                <img class="rounded-lg"  src="https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png" alt="Postman" />
               </div>
               <div
                 class="flex justify-center flex-shrink-0 w-20 h-20 p-4 bg-indigo-200 rounded-lg"
               >
-                <img class="rounded-lg" src="./img/eslint.svg" alt="" />
+                <img class="rounded-lg" src="https://user-images.githubusercontent.com/25181517/192108890-200809d1-439c-4e23-90d3-b090cf9a4eea.png" alt="IntelliJ" />
               </div>
             </div>
           </div>
@@ -197,12 +199,11 @@
         <div
           class="bg-stripe w-full md:w-[50%] bg-slate-50 border dark:bg-slate-800 dark:border-slate-900 p-4 rounded-xl"
         >
-          <p class="text-[12px]">荣誉墙</p>
-          <h1 class="mt-2 text-4xl font-bold">追风赶月</h1>
+          <p class="text-[12px]">🏆 Awards & Project</p>
+          <h1 class="mt-2 text-4xl font-bold">无限进步</h1>
           <div class="mt-4 md:text-base lg:text-xl">
-            <p class="py-1">🏅 "创新创意创业"挑战赛省一等奖</p>
-            <p class="py-1">🥉 蓝桥杯 Web 开发组国家三等奖</p>
-            <p class="py-1">🥉 字节跳动前端青训大项目三等奖</p>
+            <p class="py-1">🌟 The total play count of Bilibili videos has exceed 650,000</p>
+            <p class="py-1">🌟 The contributor of spring-ai-alibaba</p>
           </div>
         </div>
       </div>
@@ -217,10 +218,10 @@
           ></div>
           <div class="relative z-10 p-4">
             <p class="text-[12px] text-slate-200">音乐喜好</p>
-            <h1 class="mt-1.5 text-4xl font-bold text-white">古典、</h1>
-            <h1 class="mt-1.5 text-4xl font-bold text-white">欧美流行、</h1>
-            <h1 class="mt-1.5 text-4xl font-bold text-white">轻音乐</h1>
-            <p class="text-sm text-right text-slate-100">《Love Stroy》</p>
+            <h1 class="mt-1.5 text-4xl font-bold text-white">国际流行、</h1>
+            <h1 class="mt-1.5 text-4xl font-bold text-white">舞曲、</h1>
+            <h1 class="mt-1.5 text-4xl font-bold text-white">嘻哈</h1>
+            <p class="text-sm text-right text-slate-100">《This Feeling》</p>
           </div>
         </div>
         <!-- 游戏 -->
@@ -232,9 +233,9 @@
           ></div>
           <div class="relative z-10 flex flex-col justify-between h-full p-4">
             <p class="text-[12px] text-slate-50">电子竞技</p>
-            <h1 class="flex-1 mt-2 text-4xl font-bold text-white">赛博种田 / FPS</h1>
+            <h1 class="flex-1 mt-2 text-4xl font-bold text-white">赛博竞速 / FPS</h1>
             <p class="self-end mt-2 text-sm text-right text-slate-100">
-              守望先锋 / FarmTogether
+              瓦洛兰特 / Forza Horizon 5
             </p>
           </div>
         </div>
@@ -252,10 +253,10 @@
           <div class="relative z-10 flex flex-col justify-between h-full p-4">
             <p class="text-[12px] text-slate-50">兴趣爱好</p>
             <h1 class="flex-1 mt-2 text-4xl font-bold text-white">
-              科幻 / <br />动漫影视剧
+              科技 / <br />动漫影视剧
             </h1>
             <p class="self-end mt-2 text-sm text-right text-slate-100">
-              “不作恶,不快活！” ——《坏蛋联盟》
+              “要是没有小祥你们的话，瓦达西...” ——《BanG Dream! It's MyGO!!!!!》
             </p>
           </div>
         </div>
@@ -267,10 +268,10 @@
             class="absolute w-full bg-center bg-no-repeat bg-cover h-72 sport-bg"
           ></div>
           <div class="relative flex flex-col justify-between h-full p-4">
-            <p class="text-[12px] text-slate-50">体育运动</p>
-            <h1 class="flex-1 mt-2 text-4xl font-bold text-white">足球</h1>
+            <p class="text-[12px] text-slate-50">无氧运动</p>
+            <h1 class="flex-1 mt-2 text-4xl font-bold text-white">健身</h1>
             <p class="self-end mt-2 text-sm text-right text-slate-100">
-              欢迎来到梅西走廊！
+              单臂弯举突破10KG ing
             </p>
           </div>
         </div>
@@ -279,7 +280,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+</script>
 
 <style scoped>
 .honer-bg {

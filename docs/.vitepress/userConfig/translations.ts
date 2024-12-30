@@ -7,5 +7,7 @@
  */
 export const fileName2Title: Record<string, string> = {
   "0tutorial": "使用指南",
-  Interviews: "示例文件",
+  Interviews: "面经分享",
+  // Interviews: "示例文件",
+  "CodeMemoirs": "代码随想录",
 };
