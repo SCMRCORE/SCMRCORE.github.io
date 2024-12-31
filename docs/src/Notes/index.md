@@ -3,7 +3,7 @@ layout: page
 sidebar: false
 
 hero:
-  title: "Studing"
+  title: "Studying"
   subTitle: "📚 这里是我的一些碎碎念"
 
 types:
