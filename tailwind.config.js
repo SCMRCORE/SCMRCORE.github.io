@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ['./docs/.vitepress/**/*.{vue,js}', './docs/**/*.md'],
   theme: {
     extend: {
@@ -8,7 +8,7 @@ export default {
         VPDark: '#a8b1ff'
       },
       animation: {
-        'scale-in-center': 'scale-in-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'
+        'scale-in-center': 'scale-in-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both'
       },
       keyframes: {
         'scale-in-center': {
