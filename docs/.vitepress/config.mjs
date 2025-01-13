@@ -7,7 +7,7 @@ export default defineConfig({
   title: "NOBODY",
   titleTemplate: "Blog",
   // 在标签上显示所的 logo
-  head: [["link", { rel: "icon", href: "/blog_logo.svg" }]],
+  head: [["link", { rel: "icon", href: "/logo.svg" }]],
 
   // 网站描述，有利于被搜索引擎捕获
   description:
@@ -20,7 +20,7 @@ export default defineConfig({
   // 主题自定义
   themeConfig: {
     // 网站左上角 logo
-    logo: "/blog_logo.svg",
+    logo: "/logo.svg",
     // 顶部导航栏
     nav: [
       { text: "👋 About", link: "/AboutMe.md" },
