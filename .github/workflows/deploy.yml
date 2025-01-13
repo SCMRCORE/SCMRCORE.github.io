@@ -2,7 +2,6 @@
 #
 name: Deploy VitePress site to Pages
 
-
 on:
   # Runs on pushes targeting the `main` branch. Change this to `master` if you're
   # using the `master` branch as the default branch.
@@ -45,7 +44,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: npm install # or pnpm install / yarn install / bun install
+        run: npm ci # or pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Upload artifact
