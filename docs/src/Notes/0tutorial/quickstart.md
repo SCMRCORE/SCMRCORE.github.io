@@ -88,7 +88,7 @@ npm run docs:dev
 │     └─ Projects.md    // “项目”页
 │
 ├─ tsconfig.json
-├─ tailwind.config.js
+├─ tailwind.config.cjs
 └─ package.json
 
 ```
