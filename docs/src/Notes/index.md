@@ -9,7 +9,7 @@ hero:
 types:
   - name: "基础工具"
     desc: "How to Use"
-    link: "/Notes/0tutorial/quickstart"
+    link: "/Notes/0tutorial/git"
     icon: "✨"
   - name: "面经分享"
     desc: "interview experiences"
