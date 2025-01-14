@@ -248,6 +248,33 @@ updateTime: "2023-10-25 00:21"
   link: string;
 ```
 
+## 项目结构
+
+以下是该项目的目录结构简要介绍，省略了部分不必要的信息
+
+（如果你是一名前端开发人员，你可能已经知道它们的含义）：
+
+```js
+.
+├─ docs
+│  ├─ .vitepress
+│  │  ├─ components
+│  │  ├─ userConfig // 用户数据：友链...
+│  │  └─ config.mjs // vitepress 配置入口
+│  └─ src           // 存放所有的笔记文件
+│     ├─ public     // 存放一些静态资源，它们在构建后将保留原始名称
+│     ├─ Notes      // markdown 笔记文件
+│     ├─ index.md       // 主页
+│     ├─ AboutMe.md     // “关于”页
+│     ├─ Friends.md     // 友链页
+│     └─ Projects.md    // “项目”页
+│
+├─ tsconfig.json
+├─ tailwind.config.js
+└─ package.json
+
+```
+
 ## 更多信息
 
 更多配置信息，请参阅以下链接：
@@ -255,3 +282,4 @@ updateTime: "2023-10-25 00:21"
 <LinkCard link="https://vitepress.dev/reference/site-config#vite-vue-markdown-config" desc="【VitePress 官方文档】 Site Config"/>
 
 <LinkCard link="https://skewb.gitee.io/vitepress/reference/site-config.html" desc="【VitePress 民间翻译】 站点配置"/>
+

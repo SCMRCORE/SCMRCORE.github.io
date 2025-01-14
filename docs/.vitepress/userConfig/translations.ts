@@ -6,7 +6,7 @@
  * ! 并在该文件中将其名称进行替换。
  */
 export const fileName2Title: Record<string, string> = {
-  "0tutorial": "使用指南",
+  "0tutorial": "基础工具",
   Interviews: "面经分享",
   // Interviews: "示例文件",
   "CodeMemoirs": "代码随想录",

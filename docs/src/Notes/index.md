@@ -7,7 +7,7 @@ hero:
   subTitle: "📚 这里是我的一些碎碎念"
 
 types:
-  - name: "使用指南"
+  - name: "基础工具"
     desc: "How to Use"
     link: "/Notes/0tutorial/quickstart"
     icon: "✨"
