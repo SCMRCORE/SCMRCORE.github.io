@@ -1,5 +1,5 @@
 ---
-title: "🌈 语法介绍"
+title: "🌈 VitePress语法介绍"
 desc: "关于本项目中 Markdown 拓展语法介绍与示例。包括代码组，链接卡片，文本高亮，自定义容器等等"
 tags: "Tutorial"
 updateTime: "2023-10-24 14:56"
