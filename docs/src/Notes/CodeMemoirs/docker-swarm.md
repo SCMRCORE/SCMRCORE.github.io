@@ -197,3 +197,6 @@ sudo docker swarm leave --force
 sudo docker swarm leave
 ```
 
+## 之前对于集群的误解
+
+集群的话，可以在每个服务器都有对一个模块的实例，然后通过naco负载均衡，而不是之前理解的那样，不同服务器部署不同模块
