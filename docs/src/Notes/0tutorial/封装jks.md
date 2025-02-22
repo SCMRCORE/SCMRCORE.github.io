@@ -1,5 +1,5 @@
 ---
-title: "🌈 封装jks文件"
+title: "🔐 封装jks文件"
 desc: "一个公私钥文件"
 tags: "Tutorial"
 updateTime: "2023-10-24 14:56"

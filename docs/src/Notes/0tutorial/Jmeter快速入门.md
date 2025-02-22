@@ -1,5 +1,5 @@
 ---
-title: "🎯 Jmeter快速入门"
+title: "😣 Jmeter快速入门"
 outline: deep
 desc: "一个可实现高并发请求的压测工具"
 tags: "Tutorial"
