@@ -137,7 +137,7 @@ Post请求：
 
 例子：
 
-![HttpUtils](D:\project-server\blog\blogs\HttpClient.assets\HttpUtils.png)	
+![HttpUtils](../../public/HttpClient.assets/HttpUtils.png)	
 
 源码：
 
