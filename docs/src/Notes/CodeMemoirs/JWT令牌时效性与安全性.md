@@ -1,5 +1,5 @@
 ---
-title: "🪪 平衡JWT令牌时效性与安全性"
+title: "🪪 JWT令牌时效性与安全性"
 desc: "自己学习到的有关双token的知识"
 tags: "note"
 updateTime: "2025-2-24 2:24"
