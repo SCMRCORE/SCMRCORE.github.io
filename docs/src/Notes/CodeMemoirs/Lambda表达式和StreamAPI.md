@@ -85,3 +85,44 @@ public int sumRandomNumber(int[] array, Random random){
 
 **这里也用到了我们函数式编程涉及到的lambda表达式**
 
+
+
+## 拓展：算法的自定义排序
+
+```java
+Arrays.sort(intervals, new Comparator<int[]>(){
+    public int compare(int[] interval1, int[] interval2){
+        return interval1[0] - interval2[0];
+    }
+});
+```
+
+用Java写算法不可避免的会遇到这样的写法；
+
+这里实际上就是运用的匿名内部类写法：
+
+```Java
+new Comparator<>(){...逻辑...}
+```
+
+因为只需要用一次，所以不需要命名也就是匿名；
+
+实现逻辑也是直接 <>(){...这里写逻辑即可...}
+
+这个其实有点像new int[]{1, 2, 3}
+
+> **TIP：Comparator是util包的，我们还有个Comparable是lang包的**
+
+他的compare函数则是：
+
+```java
+public class Job implements Comparable<Job> {
+    private Runnable task;
+    private long startTime;
+    
+    @Override
+    public int compareTo(Job o) {//传入一个参数和当前对比
+        return Long.compare(this.startTime, o.startTime);
+    }
+}
+```
