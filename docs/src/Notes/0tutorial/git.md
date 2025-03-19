@@ -212,6 +212,35 @@ git branch -D 分支名		(强制删除分支)
 
 
 
+
+
+### git版本回退
+
+**对于尚未添加到暂存区(add)**
+
+```powershell
+//放弃所有在工作目录中的修改：
+git checkout -- .
+//放弃特定文件修改
+git checkout -- [文件路径]
+```
+
+**已经将更改添加到暂存区(尚未commit)**
+
+先取消暂存状态
+
+```powershell
+git reset HEAD --
+```
+
+然后再用上面两条指令
+
+
+
+
+
+
+
 ##  github部分
 
 ### 仓库托管&配备公钥
