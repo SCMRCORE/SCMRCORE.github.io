@@ -1,7 +1,9 @@
-title: "🥽 实现简单ReentrantLock"
-desc: 手写AQS实现Lock"
+---
+title: "🔒 实现简单ReentrantLock"
+desc: "手写AQS实现Lock"
 tags: "note"
-updateTime: "2025-3-18 14:23"
+updateTime: "2025-3-20 14:23"
+---
 
 # 手写AQS实现Lock
 
