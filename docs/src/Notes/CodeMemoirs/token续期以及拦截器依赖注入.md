@@ -133,3 +133,33 @@ public class MvcConfig implements WebMvcConfigurer {
 ```
 
 这样的话，我们就可以在拦截器中直接使用@Autowired注解进行依赖注入了。
+
+
+
+
+
+> **依赖注入失败案例**
+
+这个案例的构造函数要求：基本数据类型long，但是Spring容器找不到这样的Bean；
+
+**依赖注入一般是针对Bean而言，基本数据类型并非Bean，因此没法直接注入**
+
+```java
+/**
+ * 雪花算法生成唯一id
+ */
+@Component
+public class SnowflakeIdWorker {
+	........
+    public SnowflakeIdWorker(long workerId) {
+        if (workerId > maxWorkerId || workerId < 0) {
+            throw new IllegalArgumentException(String.format("workerId can't be greater than %d or less than 0", maxWorkerId));
+        }
+        this.workerId = workerId;
+    }
+	........
+}
+```
+
+
+
