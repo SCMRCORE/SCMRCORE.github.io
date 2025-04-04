@@ -140,6 +140,11 @@ public class MvcConfig implements WebMvcConfigurer {
 
 > **依赖注入失败案例**
 
+```java
+@Autowired
+private SnowflakeIdWorker snowflakeIdWorker;
+```
+
 这个案例的构造函数要求：基本数据类型long，但是Spring容器找不到这样的Bean；
 
 **依赖注入一般是针对Bean而言，基本数据类型并非Bean，因此没法直接注入**
@@ -161,5 +166,31 @@ public class SnowflakeIdWorker {
 }
 ```
 
+如何解决？
 
+**方案1：编写配置类**
+
+将需要的workId和snowflakeIdWorker都注册为Bean，然后把workId传入snowflakeIdWorker
+
+```java
+@Configuration
+public class SnowflakeIdWorkerConfig {
+
+    @Bean
+    public long SnowWorkId(){
+        return 1L;
+    }
+
+    @Bean
+    public SnowflakeIdWorker snowflakeIdWorker(long SnowWorkId){
+        return new SnowflakeIdWorker(SnowWorkId);
+    }
+}
+```
+
+**方案2：直接new**
+
+```java
+private SnowflakeIdWorker snowflakeIdWorker = new SnowflakeIdWorker(1L);
+```
 
