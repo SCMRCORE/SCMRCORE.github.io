@@ -121,7 +121,11 @@ Claude (Anthropic公司自己的)，Cursor，Windsuf (类似Cursor)，Cline (Cla
 
 
 
+> **TIP：自己的开源经历**
 
+作为Tool-calling的开源贡献者，对于tool-calling比如百度翻译，需要开源贡献者去单独针对百度翻译去写适配自己框架的tool-calling；不同的框架写不同的接入实现；
+
+而mcp的话，则只需要让百度翻译本身针对mcp-server规范来开发，开发者则只需要写针对该server的client实现即可，不再需要许许多多的贡献者手动去针对百度翻译来实现接入。
 
 
 
