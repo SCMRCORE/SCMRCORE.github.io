@@ -105,6 +105,10 @@ docker compose -f docker-compose.yml up -d
 
 主要选chat和embedding模型就行
 
+下面依次是：图转文，语音转文，重拍(和Retriveal有关)，TTS模型
+
+也就是说支持多模态
+
 3.搭建rag知识库：
 
 参数可自己选，Chunk method就是根据投喂的不同文件来进行针对性解析
@@ -114,3 +118,26 @@ docker compose -f docker-compose.yml up -d
 4.创建助理，进行chat
 
 ![image-20250420223611393](../../public/ollama.assets/image-20250420223611393.png)
+
+
+
+
+
+
+
+# openWebUI
+
+ragflow确实好用，但是太吃设备了，openWebUI专门适配ollama出的，嘎嘎好用
+
+[open-webui/open-webui: User-friendly AI Interface (Supports Ollama, OpenAI API, ...)](https://github.com/open-webui/open-webui)
+
+直接看README：
+
+已经装了ollama又有docker而且是N卡，直接启动！
+
+```powershell
+docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+```
+
+访问3000端口号
+
