@@ -484,3 +484,19 @@ backend/clock-service/target
 
 
 
+
+
+### 别的仓库提取commit到自己仓库
+
+情景：我在别人的合作fork仓库开发，并且commit了。但是我想挑自己的commit到自己的fork仓库，然后提交pr，这样该怎么做呢？
+
+- 本地仓库可以remote多个仓库，我们先在自己fork的仓库的本地，remote另一个仓库
+- 然后切换到另一个仓库，获取commit的ID，IDEA可以直接看
+
+```bash
+//然后输入：
+git cherry-pick abcdef1
+```
+
+TIP：不一定会有要求add然后commit，因为已经commit过了。直接推上自己的仓库去即可
+
