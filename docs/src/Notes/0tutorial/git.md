@@ -500,3 +500,50 @@ git cherry-pick abcdef1
 
 TIP：不一定会有要求add然后commit，因为已经commit过了。直接推上自己的仓库去即可
 
+
+
+### 关于stash和丢弃commit
+
+我们在commit的时候会遇到，本地暂存区未commit或者commit未提交，此时就要么提交，要么stash暂存。
+
+```powershell
+# 暂存当前修改
+git stash
+
+# 切换分支或做其他操作...
+
+# 恢复暂存的修改
+git stash apply
+# 或者
+git stash pop   # 恢复并删除该stash
+
+#查看stash列表
+git stash list
+
+#恢复某个特定的 stash
+git stash apply stash@{1}
+```
+
+选择丢弃的话：
+
+```bash
+#查看本地到底改了什么
+git status
+
+#如果你确认不需要这些本地修改，可以丢弃它们：
+git reset --hard
+
+
+```
+
+放弃本地的更改
+
+```bash
+# 放弃所有未暂存的更改
+git restore .
+
+# 如果也需要放弃已暂存的更改
+git reset
+git restore .
+```
+
