@@ -3,10 +3,145 @@ title: "🚀 git&github"
 outline: deep
 desc: "如何使用git&github"
 tags: "Tutorial"
-updateTime: "2025-1-15 1:25"
+updateTime: "2025-8-5 16:23"
 ---
 
 # Git&GitHub介绍
+
+## 开源/实习经验
+
+### 迈出开源第一步
+
+[firstcontributions/first-contributions: 🚀✨ Help beginners to contribute to open source projects](https://github.com/firstcontributions/first-contributions)
+
+这个项目手把手教了如何进行开源贡献，包括fork，clone，pr等等，非常建议自己做一遍。
+
+![image-20250115010736268](../../public/git.assets/image-20250115010736268.png)	
+
+(中文版)
+
+误区：不是说我随便创建个代码放到github就是开源了，开源社区都有社区规范之类的，可以自己多去看看。
+
+> 个人经验
+
+- **阅读README**：进入每一个开源项目首先就要去看README(类似于项目介绍)
+- **查看issues**：通常issue会写一些项目目前的问题，以及待开发的东西
+- **查看/提交pr**：如何提交pr上面项目有讲，通常出现在pull request里的就是代表还没合并的pr。
+- **英文English**：github社区英文是很重要了，我知道大家第一次看会很痛苦，但是用多了就习惯了，作为程序员英语算是一个基本功了。
+
+
+
+### **变基与合并**
+
+**Q1**：什么是变基/合并？
+
+- 变基是将**一个分支的更改应用到另一个分支的最新提交之上**，从而使得目标分支看起来就像**直接基于最新的源分支开发**的一样。
+- 合并是将**两个分支的更改整合**在一起，**创建一个新的合并**提交来表示这次集成。
+
+
+
+开源/实习中：
+
+1. 一般是在本地main或者dev来时刻保持最新，有事没事git pull
+2. 要开发新功能feat时，从main/dev最新分支，switch -c出去
+3. 如果main或者dev更新了，此时在feat这里建议rebase main/dev保持更新
+   （TIP: 如果已经提交pr，不要rebase，不然会把别人代码拉到你的分支历史；可以直接在github的fork仓库那里点更新当前分支然后再拉下来，如果要求你discord，说明此时有冲突了需要解决下）
+
+merge其实我已经用的少了
+
+
+
+### 关于暂存和放弃
+
+当你checkout时会遇到**不让你checkout出去**，因为有未提交的文件，此时你不想提交(因为是测试的)，要么在最开始就用ignore屏蔽，要么就暂存stash。
+
+```powershell
+# 暂存当前修改
+git stash
+
+# 切换分支或做其他操作...
+
+#查看stash列表
+git stash list
+
+#恢复某个特定的 stash，一定要加""
+git stash apply "stash@{1}"
+#或者，我pop用的多
+git stash pop "stash@{1}"
+```
+
+
+
+### 关于gitignore
+
+gitignore的文件可以忽略你不想进行版本管理的文件
+
+注意！：gitignore必须提前写好，如果已经进行的add或者commit的则无法ignore
+
+常见格式：
+
+```powershell
+# 忽略所有 .class 文件
+*.class
+
+# 忽略所有 .jar 文件
+*.jar
+
+# 忽略所有 .jar.original 文件
+*.jar.original
+
+# 忽略所有 .gitignore 文件
+*.gitignore
+
+# 忽略所有 .yml 文件
+*.yml
+
+# 忽略所有 .yaml 文件
+*.yaml
+
+# 忽略所有 .factories 文件
+*.factories
+
+# 忽略所有 target 目录
+backend/user-service/target
+backend/lec-gateway/target
+backend/clock-service/target
+```
+
+
+
+### 提取远程commit到自己仓库
+
+情景：我在别人的合作fork仓库开发，并且commit了。但是我想挑自己的commit到自己的fork仓库，然后提交pr，这样该怎么做呢？
+
+- **本地仓库可以remote多个仓库**，我们先在自己fork的仓库的本地，remote另一个仓库
+- 然后切换到另一个仓库，获取commit的ID，IDEA可以直接看
+
+```bash
+//然后输入：
+git cherry-pick abcdef1
+```
+
+TIP：不一定会有要求add然后commit，因为已经commit过了。直接推上自己的仓库去即可
+
+
+
+### pr中撤回错误commit
+
+如果自己或者别人在我这个pr上commit导致了一些错误
+
+比如CLA出错，那么就可以撤回这个commit（^得加）
+
+```bash
+//先撤回
+git reset --hard commitID^
+//然后强制提交
+git push --force origin main
+```
+
+然后就能在github的pr的commit历史上看到reset了
+
+
 
 ## 大致工作流程图
 
@@ -369,181 +504,4 @@ A 用户在本地代码修改完后先推送到远程仓库，此时B也在本�
 
 
 
-
-## 项目中遇到的知识
-
-### 迈出开源第一步
-
-[firstcontributions/first-contributions: 🚀✨ Help beginners to contribute to open source projects](https://github.com/firstcontributions/first-contributions)
-
-这个项目手把手教了如何进行开源贡献，包括fork，clone，pr等等，非常建议自己做一遍。
-
-![image-20250115010736268](../../public/git.assets/image-20250115010736268.png)	
-
-(中文版)
-
-误区：不是说我随便创建个代码放到github就是开源了，开源社区都有社区规范之类的，可以自己多去看看。
-
-> 个人经验
-
-- **阅读README**：进入每一个开源项目首先就要去看README(类似于项目介绍)
-- **查看issues**：通常issue会写一些项目目前的问题，以及待开发的东西
-- **查看/提交pr**：如何提交pr上面项目有讲，通常出现在pull request里的就是代表还没合并的pr。
-- **英文English**：github社区英文是很重要了，我知道大家第一次看会很痛苦，但是用多了就习惯了，作为程序员英语算是一个基本功了。
-
-
-
-
-
-### IDEA的git使用指南
-
-我们看这张图，本地即为本地分支，远程即为github的远程分支
-
-![IDEA的git](../../public/git.assets/IDEA的git.png)	
-
-**1.有关IDEA的本地分支：**
-
-IDEA中的本地分支比如master有个后缀origin/master，意思是远程**master分支的快照**。
-
-在这个分支pull和push都是直接对接的远程master分支。
-
-PS：IDEA里创建分支，可以选择不用快照分支。
-
-
-
-**2.变基与合并:**
-
-**Q1**：什么是变基/合并？
-
-- 变基是将**一个分支的更改应用到另一个分支的最新提交之上**，从而使得目标分支看起来就像**直接基于最新的源分支开发**的一样。
-- 合并是将**两个分支的更改整合**在一起，**创建一个新的合并**提交来表示这次集成。
-
-
-
-**Q2**：开发怎么保证当前分支代码最新？
-
-在实际开发中，我们**不被要求直接开发master分支**，所以需要建立一个其他分支，这里就用bankend-gh开发。
-
-但是我们每次coding前都**要保证当前代码是master的最新代码**，此时我们就可以选择变基或者合并
-
-![IDEA变基与合并](../../public/git.assets/IDEA变基与合并.png)	
-
-由图可知，此时我在bankend-gh分支上，如何拉取最新master最新代码到bankend-gh分支呢？
-
-**法1**：gitBash命令行里：
-
-- checkout(签出)到bankend-gh(本地的)：切换当前分为bankend-gh。
-- 然后git pull [remote name] [branch name]：前者是远程仓库名，后者是远程仓库里的分支名。就可以 拉取最新代码到本地 然后 合并 这就是pull的功能。
-
-**法2**：在IDEA中：
-
-- 因为本地有个origin/master的快照，然而我们在bankend-gh(本地)分支。
-- 我们就可以先更新master(本地)，然后选择"将bankend-gh变基到master" 或者 "将master合并到bankend-gh" 这样就能保证bankend-gh里是master的最新代码了。
-
-
-
-
-
-
-
-### 关于gitignore
-
-gitignore的文件可以忽略你不想进行版本管理的文件
-
-注意！：gitignore必须提前写好，如果已经进行的add或者commit的则无法ignore
-
-常见格式：
-
-```powershell
-# 忽略所有 .class 文件
-*.class
-
-# 忽略所有 .jar 文件
-*.jar
-
-# 忽略所有 .jar.original 文件
-*.jar.original
-
-# 忽略所有 .gitignore 文件
-*.gitignore
-
-# 忽略所有 .yml 文件
-*.yml
-
-# 忽略所有 .yaml 文件
-*.yaml
-
-# 忽略所有 .factories 文件
-*.factories
-
-# 忽略所有 target 目录
-backend/user-service/target
-backend/lec-gateway/target
-backend/clock-service/target
-```
-
-
-
-
-
-### 别的仓库提取commit到自己仓库
-
-情景：我在别人的合作fork仓库开发，并且commit了。但是我想挑自己的commit到自己的fork仓库，然后提交pr，这样该怎么做呢？
-
-- 本地仓库可以remote多个仓库，我们先在自己fork的仓库的本地，remote另一个仓库
-- 然后切换到另一个仓库，获取commit的ID，IDEA可以直接看
-
-```bash
-//然后输入：
-git cherry-pick abcdef1
-```
-
-TIP：不一定会有要求add然后commit，因为已经commit过了。直接推上自己的仓库去即可
-
-
-
-### 关于stash和丢弃commit
-
-我们在commit的时候会遇到，本地暂存区未commit或者commit未提交，此时就要么提交，要么stash暂存。
-
-```powershell
-# 暂存当前修改
-git stash
-
-# 切换分支或做其他操作...
-
-# 恢复暂存的修改
-git stash apply
-# 或者
-git stash pop   # 恢复并删除该stash
-
-#查看stash列表
-git stash list
-
-#恢复某个特定的 stash
-git stash apply stash@{1}
-```
-
-选择丢弃的话：
-
-```bash
-#查看本地到底改了什么
-git status
-
-#如果你确认不需要这些本地修改，可以丢弃它们：
-git reset --hard
-
-
-```
-
-放弃本地的更改
-
-```bash
-# 放弃所有未暂存的更改
-git restore .
-
-# 如果也需要放弃已暂存的更改
-git reset
-git restore .
-```
 
